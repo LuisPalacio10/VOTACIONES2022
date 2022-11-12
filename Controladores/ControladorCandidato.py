@@ -3,7 +3,6 @@ from Repositorios.RepositorioPartido import RepositorioPartido
 from Modelos.Candidato import Candidato
 from Modelos.Partido import Partido
 
-
 class ControladorCandidato():
 
     def __init__(self):
@@ -31,7 +30,6 @@ class ControladorCandidato():
 
     def delete(self, id):
         return self.repositorioCandidato.delete(id)
-
 
     """    Relación Candidato y Partido    """
 

@@ -5,10 +5,12 @@ from Repositorios.RepositorioResultado import RepositorioResultado
 from Repositorios.RepositorioMesa import RepositorioMesa
 from Repositorios.RepositorioCandidato import RepositorioCandidato
 class ControladorResultado():
+
     def __init__(self):
         self.repositorioResultado = RepositorioResultado()
         self.repositorioMesa = RepositorioMesa()
         self.repositorioCandidato = RepositorioCandidato()
+        
     def index(self):
         return self.repositorioResultado.findAll()
 
